@@ -14,7 +14,7 @@ app.use(
 app.use(express.json());
 // root
 app.get("/", (req, res) => {
-  res.send("To Do app Running on");
+  res.send("To Do app Running Successfully");
 });
 
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.b5iq7.mongodb.net/?retryWrites=true&w=majority`;
